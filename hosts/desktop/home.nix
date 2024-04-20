@@ -2,7 +2,8 @@
 
 {
   imports = [
-    
+    ../../user/app/terminal/alacritty.nix
+    ../../user/wm/i3.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
