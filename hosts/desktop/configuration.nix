@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ../../system/hardware-configuration.nix
-      ../../system/wm/awesome.nix
+      ../../system/wm/i3.nix
       ../../user/app/games/prismlauncher.nix
     ];
 
