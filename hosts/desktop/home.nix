@@ -2,12 +2,12 @@
 
 {
   imports = [
-    ../../user/app/terminal/alacritty.nix
+    ../../user/terminal/alacritty.nix
     ../../user/wm/i3.nix
     ../../user/wm/polybar.nix
-    ../../user/app/filesystem/ranger.nix
-    ../../user/shell/pkgs.nix
-    ../../user/app/social/pkgs.nix
+    ../../user/app/ranger.nix
+    ../../user/terminal/shell-pkgs.nix
+    ../../user/app/social-pkgs.nix
     ../../system/hardware/pkgs.nix
   ];
 

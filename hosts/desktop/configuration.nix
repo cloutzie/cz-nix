@@ -11,7 +11,7 @@
       ../../system/hardware/bluetooth.nix
       ../../system/hardware/pipewire.nix
       ../../system/hardware/nvidia.nix
-      ../../system/dm/x11.nix
+      ../../system/wm/x11.nix
     ];
 
   # Bootloader.
