@@ -8,6 +8,7 @@
     ../../user/app/filesystem/ranger.nix
     ../../user/shell/pkgs.nix
     ../../user/app/social/pkgs.nix
+    ../../system/hardware/pkgs.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should

@@ -3,6 +3,11 @@
 {
   home.packages = with pkgs; [
     gotop
-    neofetch
+    fastfetch
+    cava
+    unzip
+    rzip
+    pandoc
+    timer
   ];
 }
