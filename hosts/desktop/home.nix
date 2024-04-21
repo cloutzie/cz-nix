@@ -7,13 +7,15 @@
     ../../user/wm/polybar.nix
     ../../user/app/filesystem/ranger.nix
     ../../user/shell/pkgs.nix
+    ../../user/app/social/pkgs.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "cz";
   home.homeDirectory = "/home/cz";
-
+  
+  nixpkgs.config.allowUnfree = true;
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.

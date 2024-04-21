@@ -1,17 +1,21 @@
-{ config, ... }:
+{ pkgs, ... }:
 
 {
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
+  services.xserver.videoDrivers = ["nvidia"];
+
+  environment.variables = {
+    GBM_BACKEND = "nvidia-drm";
+    WLR_NO_HARDWARE_CURSORS = "1";
+    LIBVA_DRIVER_NAME = "nvidia";
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
   };
 
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = true;
-    powerManagement.finegrained = false;
-    open = false;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+  hardware = {
+    nvidia = {
+      open = true;
+      powerManagement.enable = true;
+      modesetting.enable = true;
+    };
+    opengl.extraPackages = with pkgs; [nvidia-vaapi-driver];
   };
 }
