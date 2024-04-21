@@ -5,6 +5,8 @@
     ../../user/app/terminal/alacritty.nix
     ../../user/wm/i3.nix
     ../../user/wm/polybar.nix
+    ../../user/app/filesystem/ranger.nix
+    ../../user/shell/pkgs.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should
