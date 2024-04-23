@@ -4,10 +4,11 @@
   imports = [
     ../../user/terminal/alacritty.nix
     ../../user/wm/i3.nix
-    ../../user/wm/polybar.nix
+   # ../../user/wm/polybar.nix
     ../../user/app/ranger.nix
     ../../user/terminal/shell-pkgs.nix
     ../../user/app/social-pkgs.nix
+    ../../user/app/firefox.nix
     ../../system/hardware/pkgs.nix
   ];
 
