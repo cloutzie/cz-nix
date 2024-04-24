@@ -4,7 +4,7 @@
   imports = [
     ../../user/terminal/alacritty.nix
     ../../user/wm/i3.nix
-   # ../../user/wm/polybar.nix
+    ../../user/wm/polybar.nix
     ../../user/app/ranger.nix
     ../../user/terminal/shell-pkgs.nix
     ../../user/app/social-pkgs.nix
@@ -81,5 +81,4 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
   programs.neovim.enable = true;
-  programs.qutebrowser.enable = true;
 }

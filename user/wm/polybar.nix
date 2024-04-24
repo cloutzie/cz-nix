@@ -1,14 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  services.polybar = rec {
+  services.polybar = {
     enable = true;
 
-    package = pkgs.polybar.override {
-      i3GapsSupport = true;
-      alsaSupport = true;
-    };
-    
-    script = "polybar bar";
+    script = "polybar bar &";
   };
+    
+
 }

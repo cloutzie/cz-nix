@@ -1,8 +1,14 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
     ranger
-    highlight
   ];
+  programs.ranger = {
+    enable = true;
+
+    rifle = [
+      { condition = "mime ^text"; command = "nvim -- $@"; }
+    ];
+  };
 }

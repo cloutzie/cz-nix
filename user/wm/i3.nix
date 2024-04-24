@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   xsession.windowManager.i3 = {
@@ -7,13 +7,12 @@
 
     config = rec {
       modifier = "Mod4";
-      bars = [ ];
 
       window.border = 0;
 
       gaps = {
-        inner = 15;
-	outer = 5;
+        inner = 10;
+	outer = 10;
       };
       keybindings = lib.mkOptionDefault {
         "${modifier}+Return" = "exec alacritty";
