@@ -12,7 +12,9 @@
       ../../system/hardware/pipewire.nix
       ../../system/hardware/nvidia.nix
       ../../system/wm/x11.nix
+      ../../user/style/fonts.nix
     ];
+  
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -59,7 +61,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       git
-      emptty
     ];
   };
 

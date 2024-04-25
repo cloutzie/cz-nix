@@ -8,7 +8,12 @@
     config = rec {
       modifier = "Mod4";
 
-      window.border = 0;
+      window = {
+        border = 0;
+	commands = [
+          { command = "floating_border pixel 0"; criteria = { class = "Mozilla Firefox"; };}
+	];
+      };
 
       gaps = {
         inner = 10;
