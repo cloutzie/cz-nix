@@ -9,5 +9,6 @@
     rzip
     pandoc
     timer
+    xclip
   ];
 }
