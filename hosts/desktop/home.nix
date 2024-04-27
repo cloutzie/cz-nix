@@ -13,6 +13,7 @@
     ../../user/app/neovim.nix
     ../../user/terminal/sh.nix
     ../../user/terminal/starship.nix
+    ../../user/wm/picom.nix
   ];
 
   programs.home-manager.enable = true;

@@ -6,8 +6,8 @@
     
     settings = {
       character = {
-        success_symbol = "[󱞩](bold prompt)";
-        error_symbol = "[󱞩](bold red)";
+        success_symbol = "[](bold prompt)";
+        error_symbol = "[](bold red)";
         vicmd_symbol = "[](bold prompt)";
       };
 
@@ -21,9 +21,6 @@
         impure_msg = "";
         pure_msg = "pure ";
       };
-
-      battery.disabled = true;
-      package.disabled = true;
     };
   };
 }

@@ -8,20 +8,16 @@
     config = rec {
       modifier = "Mod4";
 
-      window = {
-        border = 0;
-	commands = [
-          { command = "floating_border pixel 0"; criteria = { class = "Mozilla Firefox"; };}
-	];
-      };
-
       gaps = {
-        inner = 10;
-	outer = 10;
+        inner = 20;
+	outer = 20;
       };
       keybindings = lib.mkOptionDefault {
-        "${modifier}+Return" = "exec alacritty";
+        "${modifier}+Return" = "exec --no-startup-id alacritty";
       };
     };
+    extraConfig = ''
+      default_border pixel 0
+    '';
   };
 }

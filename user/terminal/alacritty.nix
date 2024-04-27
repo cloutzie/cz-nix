@@ -7,13 +7,13 @@
     settings = {
 
       window = {
-        padding = { y = 5; x = 5; };
+        padding = { y = 5; x = 20; };
 	dimensions = {
 
           lines = 75;
 	  columns = 100;
 	};
-	opacity = 0.5;
+	opacity = 0.9;
       };
 
       colors = {
