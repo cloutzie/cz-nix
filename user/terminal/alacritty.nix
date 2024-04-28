@@ -1,78 +1,65 @@
-{ pkgs, ... }:
+{ ... }:
 
+let
+  theme = import ../style/themes/catpuccin-clout-theme.nix;
+in
 {
   programs.alacritty = {
     enable = true;
-    
+
     settings = {
 
       window = {
-        padding = { y = 5; x = 20; };
-	dimensions = {
-
-          lines = 75;
-	  columns = 100;
-	};
-	opacity = 0.9;
+        opacity = 0.75;
       };
 
-      colors = {
+      colors = with theme.colors; {
         primary = {
-          background = "0x1E1E2E";   
-	  foreground = "0xCDD6F4";
+          background = base;
+	  foreground = text;
+	  dim_foreground = text;
+	  bright_foreground = text;
 	};
 	cursor = {
-          text = "0x1E1E2E";
-	  cursor = "0xDC8A78";
-	};
-	vi_mode_cursor = {
-	  text = "0x1E1E2E";
-	  cursor = "0x7287FD";
+          text = base;
+	  cursor = rosewater;
 	};
 	search = {
           matches = {
-            foreground = "0x1E1E2E";
-	    background = "0xA6ADC8";
+            foreground = base;
+	    background = subtext0;
 	  };
 	  focused_match = {
-            foreground = "0x1E1E2E";
-	    background = "0x40A02B";
+            foreground = base;
+	    background = green;
 	  };
 	};
 	hints = {
-          start = {
-            foreground = "0x1E1E2E";
-	    background = "0xDF8E1D";
-	  };
-	  end = {
-            foreground = "0x1E1E2E";
-	    background = "0xA6ADC8";
-	  };
+
 	};
 	selection = {
-          text = "0x1E1E2E";
-	  background = "0xDC8A78";
+
 	};
 	normal = {
-	  black = "0x45475A";
-	  red = "0xD20F39";
-          green = "0x40A02B";
-	  yellow = "0xDF8E1D";
-	  blue = "0x1E66F5";
-	  magenta = "0xEA76CB";
-	  cyan = "0x179299";
-	  white = "0x585B70";
+          black = subtext1;
+	  red = red;
+	  green = green;
+	  yellow = yellow;
+	  blue = blue;
+	  magenta = pink;
+	  cyan = teal;
+	  white = surface2;
 	};
 	bright = {
-          black = "0x585B70";
-	  red = "0xD20F39";
-	  green = "0x40A02B";
-	  yellow = "0xDF8E1D";
-	  blue = "0x1E66F5";
-	  magenta = "0xEA76CB";
-	  cyan = "0x179299";
-	  white = "0xA6ADC8";
-	};
+	  black = subtext0;
+	  red = red;
+	  green = green;
+	  yellow = yellow;
+	  blue = blue;
+	  magenta = pink;
+	  cyan = teal;
+	  white = surface1;
+       	};
       };
     };
   };

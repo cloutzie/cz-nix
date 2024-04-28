@@ -5,7 +5,7 @@
     enable = true;
 
     settings = {
-      corner-radius = 10;
+      corner-radius = 5;
     };
   };
 }

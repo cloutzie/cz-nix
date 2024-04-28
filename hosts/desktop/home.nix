@@ -14,6 +14,7 @@
     ../../user/terminal/sh.nix
     ../../user/terminal/starship.nix
     ../../user/wm/picom.nix
+    ../../user/dev/direnv.nix
   ];
 
   programs.home-manager.enable = true;

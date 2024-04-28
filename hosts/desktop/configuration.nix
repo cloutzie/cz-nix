@@ -13,6 +13,9 @@
       ../../system/hardware/nvidia.nix
       ../../system/wm/x11.nix
       ../../user/style/fonts.nix
+      ../../user/app/spotify.nix
+     # ../../system/hardware/autorandr.nix
+      ../../system/app/steam.nix
     ];
   
 

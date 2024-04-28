@@ -3,15 +3,15 @@
 {
   fonts = {
     packages = with pkgs; [
-      (nerdfonts.override { fonts = [ "RobotoMono" ]; })
+      (nerdfonts.override { fonts = [ "Hack" ]; })
     ];
     fontconfig = {
       enable = true;
       defaultFonts = {
-        emoji = [ "RobotoMono Nerd Font" ];
-	serif = [ "RobotoMono Nerd Font" ];
-	sansSerif = [ "RobotoMono Nerd Font" ];
-	monospace = [ "RobotoMono Nerd Font" ];
+        emoji = [ "Hack Nerd Font" ];
+	serif = [ "Hack Nerd Font" ];
+	sansSerif = [ "Hack Nerd Font" ];
+	monospace = [ "Hack Nerd Font" ];
       };
 
     };

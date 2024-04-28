@@ -8,8 +8,11 @@
       character = {
         success_symbol = "[](bold prompt)";
         error_symbol = "[](bold red)";
-        vicmd_symbol = "[](bold prompt)";
       };
+      directory = {
+        style = "bold yellow";
+      };
+
 
       cmd_duration = {
         format = "[$duration]($style)";
