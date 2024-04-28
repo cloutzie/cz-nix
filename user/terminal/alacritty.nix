@@ -11,6 +11,22 @@ in
 
       window = {
         opacity = 0.75;
+	padding = {
+          x = 20;
+	  y = 20;
+	};
+      };
+
+      font = {
+        
+	normal = {
+          family = "Hack Nerd Font";
+	  style = "Light";
+	};
+	bold = {
+          family = "Hack Nerd Font";
+	  style = "Bold";
+	};
       };
 
       colors = with theme.colors; {

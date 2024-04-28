@@ -15,6 +15,7 @@
     ../../user/terminal/starship.nix
     ../../user/wm/picom.nix
     ../../user/dev/direnv.nix
+    ../../user/wm/polybar.nix
   ];
 
   programs.home-manager.enable = true;
