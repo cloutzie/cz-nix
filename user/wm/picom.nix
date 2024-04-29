@@ -4,9 +4,9 @@
   services.picom = {
     enable = true;
     
-    inactiveOpacity = 0.5;
+    inactiveOpacity = 0.75;
     settings = {
-      corner-radius = 5;
+      corner-radius = 7;
     };
   };
 }

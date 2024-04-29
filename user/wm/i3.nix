@@ -16,12 +16,13 @@ in
         inner = 20;
 	outer = 20;
       };
+      bars = [];
       colors = with theme.colors; {
         focused = {
-	  background = surface2;
+	  background = overlay0;
           border = "#FFFFFF00";
-	  childBorder = "#FFFFFF";
-	  indicator = "#FFFFFF";
+	  childBorder = "#FFFFFF00";
+	  indicator = "#FFFFFF00";
 	  text = text;
 	};
 	unfocused = {
@@ -44,10 +45,10 @@ in
       };
       window = {
         titlebar = false;
+	border = 0;
       };
     };
     extraConfig = ''
-      default_border pixel 3
     '';
   };
 }
