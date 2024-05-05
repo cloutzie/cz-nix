@@ -16,6 +16,8 @@
       ../../user/app/spotify.nix
      # ../../system/hardware/autorandr.nix
       ../../system/app/steam.nix
+      ../../system/hardware/udev.nix
+   
     ];
   
 
@@ -64,6 +66,9 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       git
+      wootility
+      google-chrome
+
     ];
   };
 

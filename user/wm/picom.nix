@@ -6,7 +6,7 @@
     
     inactiveOpacity = 0.75;
     settings = {
-      corner-radius = 7;
+      corner-radius = 2;
     };
   };
 }

@@ -1,9 +1,13 @@
 { config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    neovim
-  ];
-  
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    plugins = with pkgs.vimPlugins; [
+      nvchad
+      nvchad-ui
+    ];
 
+  };
 }
